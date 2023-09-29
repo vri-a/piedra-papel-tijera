@@ -1,0 +1,135 @@
+:root {
+    --main: #18171C;
+    --rock: #F8D210;
+    --paper: #2FF3E0;
+    --scissor: #FA26A0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 5em 1em;
+    color: var(--main);
+    
+}
+
+.title, .message__result, .message__options {
+    text-align: center;
+    margin-bottom: 1.5em;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+.title {
+    font-size: 1.3em;
+    letter-spacing: 1px;
+
+}
+
+.board, .options {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.board {
+    margin-bottom: 2em;
+    padding: 2em 0;
+    border: 1px solid var(--main);
+
+}
+
+.options {
+    margin-bottom: 1em;
+
+}
+
+.board__player--picture
+, .options__picture, .board > p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 1em;
+    margin: 1em;
+    
+}
+
+.board__player--picture
+ , .options__picture {
+    border: 1px solid var(--main)
+}
+
+.board__player--picture
+ > img, .options__picture >img{
+    width: 100%;
+    height: 100%;
+}
+
+.options > button:nth-child(1) {
+    background-color: var(--rock);
+}
+
+.options > button:nth-child(2) {
+    background-color: var(--paper);
+}
+
+.options > button:nth-child(3) {
+    background-color: var(--scissor);
+}
+
+.message__options {
+    margin-bottom: 5em;
+}
+
+.finish {
+    width: 40%; 
+    margin: auto;
+    text-align: center;
+    font-size: 1.2em;
+    border: 1px solid var(--main);
+    padding: 1em;
+    border-radius: .3em; 
+    transition: background-color 1s;
+}
+
+.finish:hover {
+    background-color: var(--main);
+    color: #fff;
+}
+
+.options__picture, .finish {
+    cursor: pointer;
+}
+
+.board__player--points, #message__result {
+    visibility: hidden;
+}
+
+@media (max-width:350px) {
+
+.title {
+        font-size: 1em;
+        font-weight: 600;
+    }
+
+.board__player--picture
+, .options__picture, .board > p{
+        margin: .2em;
+        
+    }
+
+.finish {
+        width: 60%; 
+    }
+}
+

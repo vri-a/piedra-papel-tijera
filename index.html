@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIEDRA PAPEL O TIJERA</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="title">PIEDRA PAPEL O TIJERA</h2>
+        <div class="board">
+            <div class="board__player">
+                <div class="board__player--picture">
+                    <img src="https://cdn-icons-png.flaticon.com/128/2165/2165693.png" alt="" id="board__player--img">
+                </div>
+                <div class="board__player--points">
+                    <p>Vos</p>
+                    <p id="player__points">0</p>
+                </div>
+            </div>
+            <p>X</p>
+            <div class="board__player">
+                <div class="board__player--picture">
+                    <img src="https://cdn-icons-png.flaticon.com/128/2165/2165693.png" alt=""  id="board__machine--img">
+                </div>
+                <div  class="board__player--points">
+                    <p>Computadora</p>
+                    <p id="machine__points">0</p>
+                </div>
+            </div>
+        </div>
+    <p class="message__result" id="message__result">You win!</p>
+    <div class="options"> 
+        <button class="options__picture" id="option__rock"><img src="https://cdn-icons-png.flaticon.com/128/3562/3562093.png" alt=""></button>
+        <button class="options__picture" id="option__paper"><img src="https://cdn-icons-png.flaticon.com/128/2165/2165693.png" alt=""></button>
+        <button class="options__picture" id="option__scissor"><img src="https://cdn-icons-png.flaticon.com/128/5703/5703205.png" alt=""></button>
+    </div> 
+    <p class="message__options">Elige una opción</p>
+    <div class="finish" id="finish">Terminar</div>
+    <script src="./assets/js/main.js"></script>
+</div>
+</body>
+</html>
